@@ -1,0 +1,50 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    background-color: #f7f7f7;
+  }
+  
+  .container form {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  label,
+  input,
+  button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
