@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM Interface</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ATM Interface</h1>
+    <form id="atmForm">
+      <label for="pin">Enter PIN:</label>
+      <input type="password" id="pin" placeholder="PIN">
+      <br>
+      <label for="amount">Enter amount:</label>
+      <input type="number" id="amount" placeholder="Amount">
+      <br>
+      <button type="button" onclick="withdraw()">Withdraw</button>
+      <button type="button" onclick="deposit()">Deposit</button>
+      <button type="button" onclick="checkBalance()">Check Balance</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
